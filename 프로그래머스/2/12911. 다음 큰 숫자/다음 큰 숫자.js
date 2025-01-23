@@ -1,12 +1,14 @@
 function solution(n) {
-  const count = (num) => num.toString(2).split('1').length-1;  
-  const target = count(n); 
+    const countbinary = (num) => num.toString(2).split('1').length-1
+    let targetNumber = countbinary(n);
     
-  let item = n + 1;
-  
-  while(count(item) !== target) {
-      item ++;
-  }
- return item
+    let startFrom = n+1;
+    
+    while(countbinary(startFrom) !== targetNumber) {
+        startFrom++;
+    }
+    
+    return startFrom;
+    
 }
 
