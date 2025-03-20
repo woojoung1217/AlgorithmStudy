@@ -2,7 +2,7 @@ function solution(s) {
    let arr = s.split(" ").map(v=>parseInt(v))
    let max = Math.max(...arr); 
    let min = Math.min(...arr);
-   let res = [min, max];
+   let result = [min, max];
    
-   return res.join(" ") 
+   return result.join(" ") 
 }
