@@ -3,12 +3,12 @@ function solution(A, B) {
     A.sort((a, b) => a - b);
     B.sort((a, b) => b - a);
     
-    let result = 0;
+    let co = 0;
     
     // 각 숫자를 하나씩 곱해서 누적
     for (let i = 0; i < A.length; i++) {
-        result += A[i] * B[i];
+        co += A[i] * B[i];
     }
     
-    return result;
+    return co;
 }
